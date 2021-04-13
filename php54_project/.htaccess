@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^trang-chu$ index.php
+RewriteRule ^tin-tuc$ index.php?controller=news
+RewriteRule ^gio-hang$ index.php?controller=cart
+RewriteRule ^lien-he$ index.php?controller=contact
+RewriteRule ^san-pham/danh-muc/(.*)/(.*).html$ index.php?controller=products&action=category&id=$2
+RewriteRule ^dang-nhap$ index.php?controller=account&action=login
+RewriteRule ^dang-ky$ index.php?controller=account&action=register
